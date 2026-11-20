@@ -1,0 +1,6 @@
+﻿"id","resourceId","zone","requested","fulfilled","priority","status"
+"NEC-001","agua","Pereira","520","100","Alta","open"
+"NEC-002","alimentos","Dosquebradas","120","40","Alta","open"
+"NEC-003","higiene","Santa Rosa de Cabal","90","0","Media","open"
+"NEC-004","mantas","Santa Rosa de Cabal","70","20","Media","open"
+"NEC-005","botiquin","Pereira","40","0","Alta","open"

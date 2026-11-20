@@ -1,0 +1,420 @@
+{
+  "schemaVersion": 2,
+  "meta": {
+    "title": "Simulación académica Pereira–Dosquebradas",
+    "dataset": "GencyLog Fase 4 · 2026.11",
+    "createdAt": "2026-11-10T13:28:51.147Z",
+    "updatedAt": "2026-11-12T00:28:51.147Z",
+    "revision": 0,
+    "demo": true
+  },
+  "resources": [
+    {
+      "id": "agua",
+      "name": "Agua potable",
+      "unit": "litros",
+      "category": "Hidratación"
+    },
+    {
+      "id": "alimentos",
+      "name": "Kit alimentario familiar",
+      "unit": "kits",
+      "category": "Alimentación"
+    },
+    {
+      "id": "higiene",
+      "name": "Kit de higiene",
+      "unit": "kits",
+      "category": "Higiene"
+    },
+    {
+      "id": "mantas",
+      "name": "Manta térmica",
+      "unit": "unidades",
+      "category": "Abrigo"
+    },
+    {
+      "id": "botiquin",
+      "name": "Botiquín básico",
+      "unit": "unidades",
+      "category": "Salud"
+    },
+    {
+      "id": "colchonetas",
+      "name": "Colchoneta",
+      "unit": "unidades",
+      "category": "Refugio"
+    }
+  ],
+  "warehouses": [
+    {
+      "id": "pereira",
+      "name": "Centro de acopio Pereira",
+      "short": "Pereira",
+      "zone": "Pereira",
+      "type": "Principal"
+    },
+    {
+      "id": "dosquebradas",
+      "name": "Punto humanitario Dosquebradas",
+      "short": "Dosquebradas",
+      "zone": "Dosquebradas",
+      "type": "Distribución"
+    },
+    {
+      "id": "santarosa",
+      "name": "Punto de apoyo Santa Rosa",
+      "short": "Santa Rosa",
+      "zone": "Santa Rosa de Cabal",
+      "type": "Distribución"
+    }
+  ],
+  "lots": [
+    {
+      "id": "LOT-001",
+      "resourceId": "agua",
+      "warehouseId": "pereira",
+      "received": 1200,
+      "donor": "Donación simulada · Red solidaria",
+      "createdAt": "2026-11-10T13:28:51.147Z",
+      "note": "Ingreso de demostración"
+    },
+    {
+      "id": "LOT-002",
+      "resourceId": "alimentos",
+      "warehouseId": "pereira",
+      "received": 150,
+      "donor": "Aporte simulado · Fundación comunitaria",
+      "createdAt": "2026-11-10T16:28:51.147Z",
+      "note": "Ingreso de demostración"
+    },
+    {
+      "id": "LOT-003",
+      "resourceId": "higiene",
+      "warehouseId": "dosquebradas",
+      "received": 85,
+      "donor": "Donación simulada · Voluntariado",
+      "createdAt": "2026-11-10T19:28:51.147Z",
+      "note": "Ingreso de demostración"
+    },
+    {
+      "id": "LOT-004",
+      "resourceId": "mantas",
+      "warehouseId": "pereira",
+      "received": 100,
+      "donor": "Reserva simulada · Acopio regional",
+      "createdAt": "2026-11-11T00:28:51.147Z",
+      "note": "Ingreso de demostración"
+    },
+    {
+      "id": "LOT-005",
+      "resourceId": "botiquin",
+      "warehouseId": "santarosa",
+      "received": 35,
+      "donor": "Donación simulada · Brigada aliada",
+      "createdAt": "2026-11-11T03:28:51.147Z",
+      "note": "Ingreso de demostración"
+    },
+    {
+      "id": "LOT-006",
+      "resourceId": "colchonetas",
+      "warehouseId": "pereira",
+      "received": 60,
+      "donor": "Donación simulada · Proveedores",
+      "createdAt": "2026-11-11T05:28:51.147Z",
+      "note": "Ingreso de demostración"
+    }
+  ],
+  "movements": [
+    {
+      "id": "MOV-LOT-001",
+      "kind": "receipt",
+      "lotId": "LOT-001",
+      "warehouseId": "pereira",
+      "delta": 1200,
+      "createdAt": "2026-11-10T13:28:51.147Z",
+      "ref": "LOT-001",
+      "actor": "Operador demo",
+      "note": "Recepción inicial de datos sintéticos"
+    },
+    {
+      "id": "MOV-LOT-002",
+      "kind": "receipt",
+      "lotId": "LOT-002",
+      "warehouseId": "pereira",
+      "delta": 150,
+      "createdAt": "2026-11-10T16:28:51.147Z",
+      "ref": "LOT-002",
+      "actor": "Operador demo",
+      "note": "Recepción inicial de datos sintéticos"
+    },
+    {
+      "id": "MOV-LOT-003",
+      "kind": "receipt",
+      "lotId": "LOT-003",
+      "warehouseId": "dosquebradas",
+      "delta": 85,
+      "createdAt": "2026-11-10T19:28:51.147Z",
+      "ref": "LOT-003",
+      "actor": "Operador demo",
+      "note": "Recepción inicial de datos sintéticos"
+    },
+    {
+      "id": "MOV-LOT-004",
+      "kind": "receipt",
+      "lotId": "LOT-004",
+      "warehouseId": "pereira",
+      "delta": 100,
+      "createdAt": "2026-11-11T00:28:51.147Z",
+      "ref": "LOT-004",
+      "actor": "Operador demo",
+      "note": "Recepción inicial de datos sintéticos"
+    },
+    {
+      "id": "MOV-LOT-005",
+      "kind": "receipt",
+      "lotId": "LOT-005",
+      "warehouseId": "santarosa",
+      "delta": 35,
+      "createdAt": "2026-11-11T03:28:51.147Z",
+      "ref": "LOT-005",
+      "actor": "Operador demo",
+      "note": "Recepción inicial de datos sintéticos"
+    },
+    {
+      "id": "MOV-LOT-006",
+      "kind": "receipt",
+      "lotId": "LOT-006",
+      "warehouseId": "pereira",
+      "delta": 60,
+      "createdAt": "2026-11-11T05:28:51.147Z",
+      "ref": "LOT-006",
+      "actor": "Operador demo",
+      "note": "Recepción inicial de datos sintéticos"
+    },
+    {
+      "id": "MOV-TRA-1-OUT",
+      "kind": "transfer_out",
+      "lotId": "LOT-001",
+      "warehouseId": "pereira",
+      "delta": -250,
+      "createdAt": "2026-11-11T08:28:51.147Z",
+      "ref": "TRA-001",
+      "actor": "Operador demo",
+      "note": "Traslado entre centros"
+    },
+    {
+      "id": "MOV-TRA-1-IN",
+      "kind": "transfer_in",
+      "lotId": "LOT-001",
+      "warehouseId": "dosquebradas",
+      "delta": 250,
+      "createdAt": "2026-11-11T08:28:51.147Z",
+      "ref": "TRA-001",
+      "actor": "Operador demo",
+      "note": "Traslado entre centros"
+    },
+    {
+      "id": "MOV-DES-1",
+      "kind": "dispatch",
+      "lotId": "LOT-001",
+      "warehouseId": "dosquebradas",
+      "delta": -100,
+      "createdAt": "2026-11-11T12:28:51.147Z",
+      "ref": "DES-001",
+      "actor": "Operador demo",
+      "note": "Salida a destino Pereira"
+    },
+    {
+      "id": "MOV-ENT-1",
+      "kind": "delivery",
+      "lotId": "LOT-001",
+      "warehouseId": "pereira",
+      "delta": 100,
+      "createdAt": "2026-11-11T13:28:51.147Z",
+      "ref": "DES-001",
+      "actor": "Operador demo",
+      "note": "Entrega confirmada"
+    },
+    {
+      "id": "MOV-DES-2",
+      "kind": "dispatch",
+      "lotId": "LOT-002",
+      "warehouseId": "pereira",
+      "delta": -40,
+      "createdAt": "2026-11-11T14:28:51.147Z",
+      "ref": "DES-002",
+      "actor": "Operador demo",
+      "note": "Salida a punto Dosquebradas"
+    },
+    {
+      "id": "MOV-ENT-2",
+      "kind": "delivery",
+      "lotId": "LOT-002",
+      "warehouseId": "dosquebradas",
+      "delta": 40,
+      "createdAt": "2026-11-11T15:28:51.147Z",
+      "ref": "DES-002",
+      "actor": "Operador demo",
+      "note": "Entrega confirmada"
+    },
+    {
+      "id": "MOV-DES-3",
+      "kind": "dispatch",
+      "lotId": "LOT-002",
+      "warehouseId": "pereira",
+      "delta": -25,
+      "createdAt": "2026-11-11T22:28:51.147Z",
+      "ref": "DES-003",
+      "actor": "Operador demo",
+      "note": "En tránsito a punto Santa Rosa"
+    },
+    {
+      "id": "MOV-DES-4",
+      "kind": "dispatch",
+      "lotId": "LOT-004",
+      "warehouseId": "pereira",
+      "delta": -20,
+      "createdAt": "2026-11-11T17:28:51.147Z",
+      "ref": "DES-004",
+      "actor": "Operador demo",
+      "note": "Salida a punto Santa Rosa"
+    },
+    {
+      "id": "MOV-ENT-4",
+      "kind": "delivery",
+      "lotId": "LOT-004",
+      "warehouseId": "santarosa",
+      "delta": 20,
+      "createdAt": "2026-11-11T19:28:51.147Z",
+      "ref": "DES-004",
+      "actor": "Operador demo",
+      "note": "Entrega confirmada"
+    }
+  ],
+  "dispatches": [
+    {
+      "id": "DES-001",
+      "lotId": "LOT-001",
+      "origin": "dosquebradas",
+      "destination": "pereira",
+      "qty": 100,
+      "needId": "NEC-001",
+      "status": "delivered",
+      "createdAt": "2026-11-11T12:28:51.147Z",
+      "deliveredAt": "2026-11-11T13:28:51.147Z",
+      "receiver": "Responsable demo · Pereira",
+      "evidence": "Acta sintética REC-001",
+      "note": "Entrega simulada"
+    },
+    {
+      "id": "DES-002",
+      "lotId": "LOT-002",
+      "origin": "pereira",
+      "destination": "dosquebradas",
+      "qty": 40,
+      "needId": "NEC-002",
+      "status": "delivered",
+      "createdAt": "2026-11-11T14:28:51.147Z",
+      "deliveredAt": "2026-11-11T15:28:51.147Z",
+      "receiver": "Responsable demo · Dosquebradas",
+      "evidence": "Acta sintética REC-002",
+      "note": "Entrega simulada"
+    },
+    {
+      "id": "DES-003",
+      "lotId": "LOT-002",
+      "origin": "pereira",
+      "destination": "santarosa",
+      "qty": 25,
+      "needId": null,
+      "status": "in_transit",
+      "createdAt": "2026-11-11T22:28:51.147Z",
+      "deliveredAt": null,
+      "receiver": null,
+      "evidence": null,
+      "note": "Pendiente de confirmación"
+    },
+    {
+      "id": "DES-004",
+      "lotId": "LOT-004",
+      "origin": "pereira",
+      "destination": "santarosa",
+      "qty": 20,
+      "needId": "NEC-004",
+      "status": "delivered",
+      "createdAt": "2026-11-11T17:28:51.147Z",
+      "deliveredAt": "2026-11-11T19:28:51.147Z",
+      "receiver": "Responsable demo · Santa Rosa",
+      "evidence": "Acta sintética REC-004",
+      "note": "Entrega simulada"
+    }
+  ],
+  "needs": [
+    {
+      "id": "NEC-001",
+      "resourceId": "agua",
+      "zone": "Pereira",
+      "requested": 520,
+      "fulfilled": 100,
+      "priority": "Alta",
+      "note": "Abastecimiento para punto central",
+      "createdAt": "2026-11-10T17:28:51.147Z",
+      "status": "open"
+    },
+    {
+      "id": "NEC-002",
+      "resourceId": "alimentos",
+      "zone": "Dosquebradas",
+      "requested": 120,
+      "fulfilled": 40,
+      "priority": "Alta",
+      "note": "Apoyo a familias en escenario académico",
+      "createdAt": "2026-11-10T19:28:51.147Z",
+      "status": "open"
+    },
+    {
+      "id": "NEC-003",
+      "resourceId": "higiene",
+      "zone": "Santa Rosa de Cabal",
+      "requested": 90,
+      "fulfilled": 0,
+      "priority": "Media",
+      "note": "Higiene preventiva comunitaria",
+      "createdAt": "2026-11-11T04:28:51.147Z",
+      "status": "open"
+    },
+    {
+      "id": "NEC-004",
+      "resourceId": "mantas",
+      "zone": "Santa Rosa de Cabal",
+      "requested": 70,
+      "fulfilled": 20,
+      "priority": "Media",
+      "note": "Apoyo simulado para refugio temporal",
+      "createdAt": "2026-11-11T06:28:51.147Z",
+      "status": "open"
+    },
+    {
+      "id": "NEC-005",
+      "resourceId": "botiquin",
+      "zone": "Pereira",
+      "requested": 40,
+      "fulfilled": 0,
+      "priority": "Alta",
+      "note": "Puesto de salud simulado",
+      "createdAt": "2026-11-11T08:28:51.147Z",
+      "status": "open"
+    }
+  ],
+  "audit": [
+    {
+      "id": "AUD-001",
+      "action": "dataset_initialized",
+      "at": "2026-11-10T13:28:51.147Z",
+      "actor": "Sistema de demostración",
+      "summary": "Escenario simulado Pereira–Dosquebradas cargado",
+      "ref": "DEMO"
+    }
+  ]
+}

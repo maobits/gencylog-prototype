@@ -1,0 +1,7 @@
+﻿"id","resourceId","warehouseId","received","donor","createdAt","note"
+"LOT-001","agua","pereira","1200","Donación simulada · Red solidaria","2026-11-10T13:28:51.147Z","Ingreso de demostración"
+"LOT-002","alimentos","pereira","150","Aporte simulado · Fundación comunitaria","2026-11-10T16:28:51.147Z","Ingreso de demostración"
+"LOT-003","higiene","dosquebradas","85","Donación simulada · Voluntariado","2026-11-10T19:28:51.147Z","Ingreso de demostración"
+"LOT-004","mantas","pereira","100","Reserva simulada · Acopio regional","2026-11-11T00:28:51.147Z","Ingreso de demostración"
+"LOT-005","botiquin","santarosa","35","Donación simulada · Brigada aliada","2026-11-11T03:28:51.147Z","Ingreso de demostración"
+"LOT-006","colchonetas","pereira","60","Donación simulada · Proveedores","2026-11-11T05:28:51.147Z","Ingreso de demostración"
